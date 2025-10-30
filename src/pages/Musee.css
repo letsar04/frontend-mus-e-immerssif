@@ -1,0 +1,136 @@
+.musee-page {
+  background: linear-gradient(180deg, #111 0%, #181818 100%);
+  color: #fff;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+
+
+.musee-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.musee-subtitle {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+
+.scene3d-container {
+  width: 100%;
+  height: 80vh;
+  background: radial-gradient(circle at center, #0b0b0b 40%, #000 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+
+.scene3d-container:hover {
+  box-shadow: 0 0 60px rgba(255, 215, 0, 0.3);
+}
+
+
+/* Intro */
+.intro {
+  padding: 80px 20px;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+/* Ligne centrale */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: var(--color-gold);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Items */
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+/* Contenu */
+.timeline-content {
+  background-color: var(--color-bg-alt);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  animation: fadeInUp 1s ease;
+}
+
+.timeline-content img {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: var(--radius);
+}
+.timeline img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  margin-top: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.timeline img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+}
+
+/* Côté gauche */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+/* Côté droit */
+.timeline-item.right {
+  left: 50%;
+}
+
+/* Animation au scroll */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 2;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 25px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+}

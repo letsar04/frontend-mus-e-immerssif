@@ -1,0 +1,30 @@
+.archives-page {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-light);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.archives-title {
+  font-family: var(--font-title);
+  font-size: 2.2rem;
+  color: var(--color-gold);
+  margin-bottom: 40px;
+}
+
+.film-card {
+  background-color: var(--color-bg-alt);
+  color: var(--color-text-light);
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.film-card:hover {
+  transform: scale(1.05);
+}
+
+.film-card img {
+  border-radius: var(--radius) var(--radius) 0 0;
+}

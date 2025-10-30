@@ -1,0 +1,131 @@
+/* 🏠 Page d'accueil globale */
+.home-page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🌅 Arrière-plan animé */
+.background-slider {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  filter: blur(5px) brightness(0,6);
+  z-index: 0;
+}
+
+.background-track {
+  display: flex;
+  width: 200%;
+  animation: scrollBackground 40s linear infinite;
+}
+
+.background-track img {
+  width: 25%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+@keyframes scrollBackground {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 🌫 Superposition principale */
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* 🎬 Section Hero */
+.hero-section {
+  padding-top: 18vh;
+  padding-bottom: 6vh;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero-subtitle {
+  color: #ffcc00;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.custom-btn {
+  background-color: #ffcc00 !important;
+  color: #000 !important;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #ffd633 !important;
+  transform: scale(1.05);
+}
+
+/* ⚡ Sections interactives */
+.intro-section {
+  margin-top: 4rem;
+}
+
+.info-section {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  padding: 1.2rem;
+  margin: 1rem;
+  height: 100px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid rgba(255, 204, 0, 0.3);
+  transition: all 0.6s ease;
+}
+
+.info-section:hover {
+  transform: translateY(-5px);
+  border-color: #ffcc00;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.info-section h3 {
+  font-size: 1.3rem;
+  color: #ffcc00;
+  margin-bottom: 0.5rem;
+}
+
+.info-content {
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.info-section {
+  transition: all 0.6s ease;
+}
+
+.info-section.active {
+  height: auto;
+  padding-bottom: 1.5rem;
+}
+
+.info-section.active .info-content {
+  max-height: 200px;
+  opacity: 1;
+}

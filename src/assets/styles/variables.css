@@ -1,0 +1,26 @@
+:root {
+  /* 🎬 Palette principale */
+  --color-bg-dark: #111;
+  --color-bg-light: #1c1c1c;
+  --color-bg-alt: #2a2a2a;
+
+  --color-text-light: #f8f9fa;
+  --color-text-muted: #f8f9fa;
+
+  /* 🎨 Couleurs accent cinéma */
+  --color-gold: #d4af37;
+  --color-gold-dark: #b4942e;
+  --color-red: #a83232;
+
+  /* 🎭 Typographie */
+  --font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-title: "Cinzel", serif; 
+  --font-size-title: 2.5rem;
+  --font-size-subtitle: 1.2rem;
+
+  /* 📐 Espacements */
+  --spacing-section: 60px;
+  --spacing-title-margin: 20px;
+  --radius: 8px;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
