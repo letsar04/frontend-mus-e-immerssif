@@ -1,16 +1,42 @@
-# React + Vite
+# Musée immersif - version plateforme web interactive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue dans le projet **Musée Immersif** , une plateforme web moderne et interactive permettant aux visiteurs de vivre une **expérience immersive** de decouverte du cinéma burkinabè.
+Ce projet est construit avec **React** et **vite**, pour offrir rapidité, performance et une experience utilisateur fluide.
 
-Currently, two official plugins are available:
+----
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Fonctionnalités principales
 
-## React Compiler
+-Navigation immersive entre différentes expositions et galéries
+-Interface responsive et fluide
+-Chargement rapide grâce à vite
+-Gestion des scènes 3D grace à three.js et webGL
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+----
 
-## Expanding the ESLint configuration
+## Technologies utilisées
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technologies | Rôle |
+|------------------|-------|
+|**React**| construction de l'interface utilisateur |
+|**vite** | Outils de build et de développement rapide |
+|**javaScript**| Language principal |
+|**css**| stylisation moderne|
+|**ESLint / Prettier** | Formatage et linting du code |
+
+----
+
+## Installation et Execution du programme
+### prérequis
+s'assurer d'avoir installé sur votre système : 
+
+-[Node.js](https://nodejs.org/) **v22.20.0 ou supérieur** et npm(fournis avec node)
+
+
+## Etapes d'intégration
+### Cloner le projet
+git clone https://github.com/rach-dev/frontend-mus-e-immerssif.git
+
+### Installer les dépendances
+npm install
+npm run dev
